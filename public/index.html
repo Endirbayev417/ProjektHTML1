@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <video autoplay muted loop id="backgroundVideo">
+        <source src="background.mp4" type="video/mp4">
+    </video>
+
+    <div class="video-overlay"></div>
+
+    <div class="registration-box">
+
+        <h1>Регистрация</h1>
+
+        <form>
+
+            <input type="text" id="name" placeholder="Введите имя">
+            <small id="nameError"></small>
+            
+
+            <input type="email" id="email" placeholder="Введите Email">
+            <small id="emailError"></small>
+            
+
+            <input type="password" id="password" placeholder="Введите пароль">
+            <button type="button" id="showPassword">Показать пароль</button>
+           
+            <small id="passwordError"></small>
+            
+
+            <button type="submit">Зарегистрироваться</button>
+            <p class="switch-page">
+    Уже есть аккаунт?
+    <a href="login.html">Войти</a>
+</p>
+
+            <p id="successMessage"></p>
+
+        </form>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

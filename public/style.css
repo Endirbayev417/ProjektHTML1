@@ -1,0 +1,275 @@
+small {
+    display: block;
+    color: #ff6b6b;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    animation: errorAppear 0.3s ease;
+}
+
+@keyframes errorAppear {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}#successMessage {
+    color: green;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 15px;
+}#backgroundVideo {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    z-index: -2;
+}.registration-box {
+    width: 350px;
+    padding: 30px;
+
+    background: rgba(0, 0, 0, 0.7);
+
+    border-radius: 20px;
+
+    margin: 100px auto;
+
+    color: white;
+
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}.registration-box input {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 12px 16px;
+    margin-top: 5px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+
+    font-size: 16px;
+
+    outline: none;
+
+    transition: 0.3s;
+}.registration-box input:focus {
+    background: rgba(255, 255, 255, 0.25);
+
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+}.registration-box button {
+    width: 100%;
+    padding: 13px;
+
+    border: none;
+    border-radius: 12px;
+
+    background: linear-gradient(90deg, #6a5cff, #a855f7);
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+
+    box-shadow: 0 0 0 rgba(168, 85, 247, 0);
+}.registration-box button:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow:
+        0 0 15px rgba(168, 85, 247, 0.6),
+        0 0 30px rgba(106, 92, 255, 0.4);
+}.registration-box input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}.registration-box {
+    animation: appear 1s ease;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}.registration-box input {
+    opacity: 0;
+    animation: inputAppear 0.6s ease forwards;
+}
+
+.registration-box input:nth-of-type(1) {
+    animation-delay: 0.3s;
+}
+
+.registration-box input:nth-of-type(2) {
+    animation-delay: 0.5s;
+}
+
+.registration-box input:nth-of-type(3) {
+    animation-delay: 0.7s;
+}
+
+@keyframes inputAppear {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}.registration-box button:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 0 25px rgba(168, 85, 247, 0.7);
+}.registration-box button:active {
+    transform: translateY(1px);
+    box-shadow: 0 0 10px rgba(168, 85, 247, 0.5);
+}@media (max-width: 600px) {
+
+    .registration-box {
+        width: calc(100% - 24px);
+        padding: 30px 24px;
+        margin: 30px auto;
+        box-sizing: border-box;
+    }
+
+    .registration-box h1 {
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .registration-box input {
+        width: 100%;
+        padding: 16px;
+        font-size: 17px;
+        border-radius: 12px;
+        box-sizing: border-box;
+    }
+
+    .registration-box button {
+        width: 100%;
+        padding: 16px;
+        font-size: 17px;
+        border-radius: 12px;
+    }
+
+    .registration-box small {
+        font-size: 14px;
+    }
+}.video-overlay {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.45);
+
+    z-index: -1;
+}.video-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.35);
+
+    pointer-events: none;
+}.registration-box h1 {
+    text-align: center;
+
+    background: linear-gradient(90deg, #6a5cff, #a855f7);
+
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+
+    font-size: 32px;
+    margin-bottom: 25px;
+}.registration-box {
+    border: 1px solid rgba(168, 85, 247, 0.5);
+    box-shadow:
+        0 0 15px rgba(106, 92, 255, 0.3),
+        0 0 35px rgba(168, 85, 247, 0.2);
+}.registration-box input:focus {
+    border: 1px solid #a855f7;
+    box-shadow:
+        0 0 10px rgba(168, 85, 247, 0.6),
+        0 0 20px rgba(106, 92, 255, 0.3);
+    transform: scale(1.02);
+}#showPassword {
+    margin-top: 8px;
+    margin-bottom: 10px;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.12);
+    color: white;
+    cursor: pointer;
+    font-size: 13px;
+    transition: 0.3s ease;
+}
+
+#showPassword:hover {
+    background: rgba(168, 85, 247, 0.5);
+}#passwordStrength {
+    width: 100%;
+    height: 6px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+#strengthBar {
+    width: 0%;
+    height: 100%;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}.switch-page {
+    text-align: center;
+    margin-top: 20px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+}
+
+.switch-page a {
+    color: #a855f7;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.switch-page a:hover {
+    text-decoration: underline;
+}#loginMessage {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: bold;
+}
