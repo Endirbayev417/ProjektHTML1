@@ -9,7 +9,6 @@
 <body>
 
     <!-- Задний фон -->
-
     <video autoplay muted loop id="backgroundVideo">
         <source src="background.mp4" type="video/mp4">
     </video>
@@ -18,7 +17,6 @@
 
 
     <!-- Личный кабинет -->
-
     <div class="registration-box">
 
         <h1>Личный кабинет</h1>
@@ -27,8 +25,52 @@
             Загрузка...
         </p>
 
+
+        <!-- Баланс -->
+        <div class="balance-box">
+
+            <p>Ваш баланс</p>
+
+            <h2>
+                <span id="balance">0</span> сум
+            </h2>
+
+        </div>
+
+
+        <!-- Кнопки -->
+        <div class="balance-buttons">
+
+            <button id="depositButton">
+                ➕ Пополнить
+            </button>
+
+            <button id="withdrawButton">
+                💸 Вывести
+            </button>
+
+        </div>
+
+
+        <!-- Информация -->
+        <div class="account-info">
+
+            <p>
+                Статус:
+                <span>Активен</span>
+            </p>
+
+            <p>
+                ID пользователя:
+                <span id="userId">...</span>
+            </p>
+
+        </div>
+
+
+        <!-- Выход -->
         <button id="logoutButton">
-            Выйти
+            🚪 Выйти
         </button>
 
     </div>
